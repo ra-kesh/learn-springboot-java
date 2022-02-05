@@ -17,9 +17,12 @@ public class DemoApplication {
 	}
 
 	@GetMapping("/hello")
-	public String hello(@RequestParam(value = "name", defaultValue  = "world") String name) {
+	public String hello(@RequestParam(value = "name", defaultValue = "world") String name) {
 		return String.format("Hello %s!", name);
 	}
+	
+	//http://localhost:8080/hello
+	//http://localhost:8080/hello?name=Rakesh
 
 
 }
